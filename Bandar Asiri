@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>اختبار: عمر عقلك — لحظة وعي</title>
+<style>
+  body{font-family: Arial, Tahoma, "Segoe UI", sans-serif;direction:rtl;padding:20px;background:#f7f7f7;color:#111}
+  .container{max-width:800px;margin:0 auto;background:#fff;padding:22px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+  h1{margin-top:0}
+  .q{margin:14px 0}
+  label.option{display:block;padding:8px;border:1px solid #e3e3e3;border-radius:6px;margin:6px 0;cursor:pointer}
+  .btn{display:inline-block;padding:10px 16px;border-radius:6px;background:#2b6baf;color:#fff;text-decoration:none;border:none;cursor:pointer}
+  .result{margin-top:18px;padding:14px;border-radius:8px;background:#eef6ff}
+  footer{font-size:13px;color:#444;margin-top:20px}
+  .sources a{color:#0645ad}
+  .small{font-size:13px;color:#666}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>اختبار: كم هو "عمر عقلك"؟</h1>
+  <p class="small">هذا اختبار ترفيهي واستكشافي — ليس تشخيصاً طبياً ولا بديلاً عن تقييم نفسي محترف. يعتمد على مزيج من عادات، تفضيلات، واستجابات سلوكية لمعرفة هل شعورك وطريقة تفكيرك أقرب إلى عمر معين. للمصادر العلمية راجع قسم المصادر أسفل الصفحة.</p>
+
+  <form id="quiz">
+    <!-- 10 questions -->
+    <div class="q">
+      <b>1. كيف تقضي وقتك بعد العمل/الدراسة؟</b>
+      <label class="option"><input type="radio" name="q1" value="1"> ألعب ألعاب فيديو أو أشاهد مقاطع قصيرة باستمرار</label>
+      <label class="option"><input type="radio" name="q1" value="2"> أتابع برامج ترفيهية أو أفعل هواية خفيفة</label>
+      <label class="option"><input type="radio" name="q1" value="3"> أقرأ، أتعلم شيئًا جديدًا، أو أنظم أموري</label>
+    </div>
+
+    <div class="q">
+      <b>2. عند حدوث مشكلة مالية بسيطة، كيف تتصرف؟</b>
+      <label class="option"><input type="radio" name="q2" value="1"> أقلق ثم أنتظر أن تنحل لوحدها</label>
+      <label class="option"><input type="radio" name="q2" value="2"> أطلب نصيحة من صديق/عائلة</label>
+      <label class="option"><input type="radio" name="q2" value="3"> أضع خطة عملية للتعامل معها فورًا</label>
+    </div>
+
+    <div class="q">
+      <b>3. كيف تتعامل مع الاختلاف في الرأي؟</b>
+      <label class="option"><input type="radio" name="q3" value="1"> أتجاهل أو أترك النقاش بسرعة</label>
+      <label class="option"><input type="radio" name="q3" value="2"> أشرح رأيي ثم أترك للجميع</label>
+      <label class="option"><input type="radio" name="q3" value="3"> أحاول أن أفهم وجهة نظر الآخر وأبحث عن حل وسط</label>
+    </div>
+
+    <div class="q">
+      <b>4. كيف تصف عادات نومك عادة؟</b>
+      <label class="option"><input type="radio" name="q4" value="1"> نوم متغير ويومي يكون متأخر جدًا</label>
+      <label class="option"><input type="radio" name="q4" value="2"> أحاول النوم مبكرًا لكن أحيانًا أخفق</label>
+      <label class="option"><input type="radio" name="q4" value="3"> نمط نوم منظم وأحترم مواعيد الراحة</label>
+    </div>
+
+    <div class="q">
+      <b>5. عند التعلم أو مواجهة مهمة صعبة، ما رد فعلك؟</b>
+      <label class="option"><input type="radio" name="q5" value="1"> أهملها أو أقلق كثيرًا</label>
+      <label class="option"><input type="radio" name="q5" value="2"> أبحث عن مساعدة أو شروحات مبسطة</label>
+      <label class="option"><input type="radio" name="q5" value="3"> أقسمها خطوات وأنفذ بخطة واضحة</label>
+    </div>
+
+    <div class="q">
+      <b>6. ما مستوى اهتمامك بالتخطيط للمستقبل؟</b>
+      <label class="option"><input type="radio" name="q6" value="1"> قليل؛ أعيش اللحظة</label>
+      <label class="option"><input type="radio" name="q6" value="2"> أفكر بالمستقبل لكن بشكل غير منتظم</label>
+      <label class="option"><input type="radio" name="q6" value="3"> أخطط بانتظام وأراجع أهدافي</label>
+    </div>
+
+    <div class="q">
+      <b>7. كيف تتعامل مع التكنولوجيا الجديدة؟</b>
+      <label class="option"><input type="radio" name="q7" value="1"> أستخدمها للمتعة أكثر من الفائدة</label>
+      <label class="option"><input type="radio" name="q7" value="2"> أتعلم الوظائف المفيدة منها عند الحاجة</label>
+      <label class="option"><input type="radio" name="q7" value="3"> أبحث عن أدوات تزيد الإنتاجية وأجربها</label>
+    </div>
+
+    <div class="q">
+      <b>8. كيف تصف تحمّلك للمسؤولية؟</b>
+      <label class="option"><input type="radio" name="q8" value="1"> أتجنّب المسؤوليات متى أمكن</label>
+      <label class="option"><input type="radio" name="q8" value="2"> أتحمّل مسؤولياتي الأساسية</label>
+      <label class="option"><input type="radio" name="q8" value="3"> أتحمّل قيادات ومبادرات وأضع أولويات واضحة</label>
+    </div>
+
+    <div class="q">
+      <b>9. كيف تتصرف عندما ترتكب خطأ؟</b>
+      <label class="option"><input type="radio" name="q9" value="1"> أتهرب أو ألوم الظروف</label>
+      <label class="option"><input type="radio" name="q9" value="2"> أعتذر وأحاول تصحيح الأمر</label>
+      <label class="option"><input type="radio" name="q9" value="3"> أحلِل السبب وأضع خطة لتجنبه مستقبلًا</label>
+    </div>
+
+    <div class="q">
+      <b>10. أي عبارة تصفك أكثر؟</b>
+      <label class="option"><input type="radio" name="q10" value="1"> أعيش عاطفياً وأهتم باللحظة</label>
+      <label class="option"><input type="radio" name="q10" value="2"> أوازن بين العاطفة والعقل</label>
+      <label class="option"><input type="radio" name="q10" value="3"> أضع المنطق والتخطيط قبل الانفعال</label>
+    </div>
+
+    <div style="margin-top:12px;">
+      <button type="button" class="btn" onclick="calc()">احسب نتيجتي</button>
+      <button type="button" class="btn" onclick="resetQuiz()" style="background:#888;margin-left:8px">إعادة</button>
+    </div>
+  </form>
+
+  <div id="result" class="result" style="display:none"></div>
+
+  <footer>
+    <div class="sources">
+      <strong>مصادر وملاحظات علمية:</strong>
+      <ul>
+        <li>تعريف "العمر العقلي" (Mental age) — Encyclopaedia Britannica, APA Dictionary.</li>
+        <li>العمر الذاتي (Subjective age) وتأثيره على السلوك والصحة — دراسات منشورة في PubMed / PMC.</li>
+      </ul>
+      <p class="small">الاختبار ترفيهي واستكشافي، وليس أداة تشخيصية.</p>
+    </div>
+  </footer>
+
+<script>
+function calc(){
+  const totalQ=10;
+  let total=0;
+  for(let i=1;i<=totalQ;i++){
+    const v=document.querySelector('input[name=q'+i+']:checked');
+    if(!v){alert('الرجاء الإجابة على كل الأسئلة (السؤال '+i+')');return;}
+    total+=parseInt(v.value);
+  }
+  let category='',text='';
+  if(total<=14){category='عمر عقلي شبابي (13–25)';text='تفكيرك شبابي، يميل للحيوية واللحظة.';}
+  else if(total<=20){category='عمر عقلي ناضج متوسط (26–40)';text='تفكيرك متوازن بين العاطفة والمنطق.';}
+  else{category='عمر عقلي ناضج جدًا (41+)';text='تفكيرك متأمل ومنظم ويميل للتخطيط.';}
+  const r=document.getElementById('result');
+  r.style.display='block';
+  r.innerHTML='<h3>النتيجة: '+category+'</h3><p>'+text+'</p><p class="small">المجموع: '+total+'/30</p>';
+  r.innerHTML+='<button class="btn" style="margin-top:10px;background:#007b5e" onclick="sharePage()">🔗 شارك الرابط</button>';
+}
+
+function sharePage(){
+  const url=window.location.href;
+  if(navigator.share){
+    navigator.share({title:'اختبار عمر عقلك — لحظة وعي',text:'تعرف على عمر عقلك بهذا الاختبار الممتع',url:url})
+    .catch(err=>console.log('share canceled',err));
+  }else{
+    navigator.clipboard.writeText(url).then(()=>alert('تم نسخ الرابط! يمكنك لصقه ومشاركته.'));
+  }
+}
+
+function resetQuiz(){
+  document.getElementById('quiz').reset();
+  document.getElementById('result').style.display='none';
+}
+</script>
+
+</div>
+</body>
+</html>
